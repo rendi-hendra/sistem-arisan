@@ -3,14 +3,14 @@
 ## Register User
 
 Endpoint : POST /api/users
+Role: admin
 
 Request Body :
 
 ```json
 {
-  "username": "rendi",
-  "password": "rendi",
-  "mlId": 1,
+  "name": "rendi",
+  "password": "rendi"
 }
 ```
 
@@ -20,9 +20,8 @@ Response Body (Success) :
 {
   "data": {
     "id": 1,
-    "username": "rendi",
-    "mlId": 1,
-    "groupId": "null"
+    "name": "rendi",
+    "role": "admin"
   }
 }
 ```
@@ -43,7 +42,7 @@ Request Body :
 
 ```json
 {
-  "username": "rendi",
+  "name": "rendi",
   "password": "rahasia"
 }
 ```
@@ -54,11 +53,10 @@ Response Body (Success) :
 {
   "data": {
     "id": 1,
-    "username": "rendi",
+    "name": "rendi",
     "password": "rahasia",
-    "mlId": 1,
-    "groupId": "null",
-    "token": "Bcrypt"
+    "token": "Bcrypt",
+    "role": "admin"
   }
 }
 ```
@@ -85,9 +83,8 @@ Response Body (Success) :
 {
   "data": {
     "id": 1,
-    "username": "rendi",
-    "mlId": 1,
-    "groupId": "null"
+    "name": "rendi",
+    "role": "admin"
   }
 }
 ```
